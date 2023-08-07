@@ -17,6 +17,7 @@ let UP = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let NUM = '0123456789';
 let SP = '!@#$%^&*';
 let allowedCharacters = '';
+let generatedPassword = "";
 
 var lowercase =confirm("would you like to include lowercase letters in password?");
 if (lowercase === true) {
@@ -30,6 +31,30 @@ allowedCharacters += UP;
 }
 console.log ("allowedCharacters = ", allowedCharacters);
 
+var num =confirm("would you like to include numbers letters in password?");
+if (num === true) {
+allowedCharacters += NUM;
+}
+console.log ("allowedCharacters = ", allowedCharacters);
+
+var Special =confirm("would you like to include special characters in password?");
+if (Special === true) {
+allowedCharacters += SP;
+}
+console.log ("allowedCharacters = ", allowedCharacters);
+
+if (lowercase === false && 
+    uppercase === false &&
+    Special === false &&
+    num === false
+ ) {
+alert ("at least character type should be chosen to generate password.");
+}
+else {
+  for(let i=0; i<length; i++) {
+    let randomNum = Math.floor(Math.random())
+  }
+}
 }
 
 
