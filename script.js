@@ -8,7 +8,8 @@ function generatePassword () {
 var length=prompt("How many characters would you like your password?");
 
 if (length < 8 || length > 128) {
-  alert("please enter a number between 8 and 128") && (length= prompt("How many characters would you like your password?"));
+  alert("please enter a number between 8 and 128");
+  return "password not generated, retry by pressing generate password button."
 }
 
 //confirm("would you like to include lowercase letters in password?");//
