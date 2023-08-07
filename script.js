@@ -52,9 +52,13 @@ alert ("at least character type should be chosen to generate password.");
 }
 else {
   for(let i=0; i<length; i++) {
-    let randomNum = Math.floor(Math.random())
+    let randomNum = Math.floor(Math.random() * allowedCharacters.length);
+    let randomChar = allowedCharacters[randomNum];
+    generatedPassword += randomChar;
+    console.log ("generatedPassword = ", generatedPassword);
   }
 }
+return generatedPassword;
 }
 
 
