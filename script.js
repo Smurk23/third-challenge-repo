@@ -9,7 +9,7 @@ var length=prompt("How many characters would you like your password?");
 
 if (length < 8 || length > 128) {
   alert("please enter a number between 8 and 128");
-  return "password not generated, retry by pressing generate password button."
+  return "password not generated, retry by pressing generate password button.";
 }
 
 //confirm("would you like to include lowercase letters in password?");//
@@ -49,7 +49,8 @@ if (lowercase === false &&
     Special === false &&
     num === false
  ) {
-alert ("at least character type should be chosen to generate password.");
+alert ("at least one character type should be chosen to generate password.");
+generatedPassword = "password not generated, retry by pressing generate password button";
 }
 else {
   for(let i=0; i<length; i++) {
