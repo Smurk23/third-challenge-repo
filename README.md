@@ -6,3 +6,6 @@ I used serial methods to do this including giving a promt to the user to find ou
 
 After taking in all user information I was able to randomize the outcomes and create a completely random and secure password.
 
+view my deployed page here: https://smurk23.github.io/third-challenge-repo/
+
+heres a screenshot of my deployed page: https://1drv.ms/i/s!AjoffCMx8g__gVBFA6asJQNkyFY8?e=At61WS
